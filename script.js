@@ -21,5 +21,7 @@ $(document).ready(function () {
   //
 
   // TODO: Add code to display the current date in the header of the page.
+  //WHEN I open the planner
+  //THEN the current day is displayed at the top of the calendar
   $("#currentDay").text(dayjs().format("dddd, MMMM D[th]"))
 });
