@@ -19,10 +19,18 @@ $(document).ready(function () {
   var currentHour = dayjs().hour()
 
   //Get all elements with class "time-block"
-  var timeBlocks = $(".time-block")
+  var timeBlock = $(".time-block")
 
-  for(var i = 0; i < timeBlocks.length; i++){
-    var hour = timeBlocks[i].id.split('-')[1]
+  for(var i = 0; i < timeBlock.length; i++){
+    var hour = timeBlock[i].id.split('-')[1]
+
+    if(hour === currentHour){
+      $(timeBlock[i]).addClass('present')
+    }else if(hour < currentHour){
+      $(timeBlock[i]).removeClass('present').addClass('past')
+    }else{
+      $(timeBlock[i]).removeClass('past').addClass('future')
+    }
     
   }
   
