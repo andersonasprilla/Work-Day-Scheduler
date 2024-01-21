@@ -37,12 +37,26 @@ $(document).ready(function () {
 //THEN the text for that event is saved in local storage
 
 $(".saveBtn").on("click", function () {
+
   // Get the parent div of the clicked save button
   var parentDiv = $(this).closest(".time-block");
   // Get the hour value from the text inside the corresponding hour div
   var hour = parentDiv.find(".hour").text().trim();
   // Get the value of the textarea inside the same parent div
   var textareaValue = parentDiv.find(".description").val().trim();
-  // Add to localStorage
-  localStorage.setItem(hour, textareaValue)
+
+  // Check if the textarea is not empty
+  if (textareaValue !== "") {
+    // Add to localStorage
+    localStorage.setItem(hour, textareaValue);
+    savedNotification();
+  }
 });
+
+
+function savedNotification() {
+  $('#saved-to-ls').attr('class', 'd-block text-center')
+  setTimeout(() => {
+    $('#saved-to-ls').attr('class', 'd-none')
+  }, 3000);
+}
