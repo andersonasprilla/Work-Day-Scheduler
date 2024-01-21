@@ -11,6 +11,7 @@ A simple calendar app for scheduling your work day.
 5. [Dependencies](#dependencies)
 6. [Contributing](#contributing)
 7. [License](#license)
+8. [Screenshot](#Screenshot)
 
 ## Overview
 
@@ -52,3 +53,7 @@ If you'd like to contribute to the development of the Work Day Scheduler, please
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## Screenshot
+
+![Badges](./challenge5%20img.png)

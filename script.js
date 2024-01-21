@@ -9,7 +9,7 @@ $(document).ready(function () {
   //WHEN I view the timeblocks for that day
   //THEN each timeblock is color coded to indicate whether it is in the past, present, or future
   function colorUpdater() {
-    var currentHour = dayjs().format('HH')
+    var currentHour = '13'
     var timeBlock = $(".time-block")
 
     //loop through each block and update color
