@@ -1,6 +1,7 @@
-# Work Day Scheduler
+## Work Day Scheduler Readme
 
-A simple calendar app for scheduling your work day.
+A simple calendar app for scheduling your work day. Click on the link to navigate to the webpage
+[Live Work Day Scheduler](https://andersonasprilla.github.io/Work-Day-Scheduler/)
 
 ## Table of Contents
 
